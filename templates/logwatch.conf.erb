@@ -2,4 +2,6 @@
 MailFrom = <%= @mailfrom %>
 Output = mail
 MailTo = <%= @mailto %>
-
+<% @services.each do |service| -%>
+Service="<%= service -%>"
+<% end -%>

@@ -3,6 +3,7 @@ class logwatch::config {
 
   $mailfrom     = $logwatch::mailfrom
   $mailto       = $logwatch::mailto
+  $services     = $logwatch::services
   $ignore_lines = $logwatch::ignore_lines
 
   file { '/etc/logwatch/conf/logwatch.conf':
