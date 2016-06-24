@@ -1,7 +1,8 @@
 # Module installing and managing logwatch
 class logwatch (
-  $mailfrom = $logwatch::params::mailfrom,
-  $mailto   = $logwatch::params::mailto,
+  $mailfrom     = $logwatch::params::mailfrom,
+  $mailto       = $logwatch::params::mailto,
+  $ignore_lines = $logwatch::params::ignore_lines,
 ) inherits logwatch::params {
   contain logwatch::install
   contain logwatch::config
